@@ -4,7 +4,8 @@ import {
   FaSuitcase,
   FaUniversity,
   FaRegBuilding,
-  FaCalendarAlt
+  FaCalendarAlt,
+  FaUser
 } from 'react-icons/fa'
 
 import Table from '../components/Table'
@@ -16,8 +17,9 @@ const Resume = () => {
   return (
     <div id='resume' className='max-w-5xl mx-auto'>
       <Nav />
-      <div className='flex justify-center pb-10 text-3xl font-bold'>
-        <h1>Resume</h1>
+      <div className='flex pb-4 text-4xl font-bold'>
+        <FaUser />
+        <h2 className='pl-4'>Resume</h2>
       </div>
       <div className='flex items-center pb-10'>
         <div className='flex flex-col w-2/3'>
@@ -29,7 +31,7 @@ const Resume = () => {
             su camino de aprendizaje.
           </p>
           <a
-            href='/CV_Sara.pdf'
+            href={'/CV_Sara.pdf'}
             download
             className='w-40 text-xl py-1.5 px-3 border-2 border-black rounded-lg font-medium hover:bg-black hover:text-white hover:ease-in transition duration-300'
           >
@@ -46,10 +48,10 @@ const Resume = () => {
         />
       </div>
       <div className='my-10'>
-        <h2 className='flex gap-x-4 text-2xl font-semibold mb-8'>
-          <FaCode size={26} />
-          Habilidades
-        </h2>
+        <div className='flex pb-8 text-4xl font-bold'>
+          <FaCode />
+          <h2 className='pl-4'>Habilidades</h2>
+        </div>
         <div className='space-y-10'>
           <Table
             title={'Frontend'}
@@ -147,10 +149,10 @@ const Resume = () => {
         </div>
       </div>
       <div className='my-10'>
-        <h2 className='flex gap-x-4 text-2xl font-semibold mb-8'>
-          <FaSuitcase size={26} />
-          Experiencia Laboral
-        </h2>
+        <div className='flex pb-8 text-4xl font-bold'>
+          <FaSuitcase />
+          <h2 className='pl-4'>Experiencia Laboral</h2>
+        </div>
         <div className='space-y-10'>
           <Table
             title={'Artista Técnica'}
@@ -179,10 +181,10 @@ const Resume = () => {
         </div>
       </div>
       <div className='my-10'>
-        <h2 className='flex gap-x-4 text-2xl font-semibold mb-8'>
-          <FaUniversity size={26} />
-          Educación
-        </h2>
+        <div className='flex pb-8 text-4xl font-bold'>
+          <FaUniversity />
+          <h2 className='pl-4'>Educación</h2>
+        </div>
         <Table
           title={'Diseño y Desarrollo de Videojuegos'}
           place={'Universitat Jaume I'}
