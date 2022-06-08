@@ -16,7 +16,6 @@ import Skill from '../components/common/skill'
 const Resume = () => {
   return (
     <div id='resume' className='max-w-5xl mx-auto'>
-      <Nav />
       <div className='flex pb-4 text-4xl font-bold'>
         <FaUser />
         <h2 className='pl-4'>Resume</h2>
@@ -194,7 +193,6 @@ const Resume = () => {
           description={'Trabaje en tal y tal y tal'}
         />
       </div>
-      <Footer />
     </div>
   )
 }

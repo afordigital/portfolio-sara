@@ -1,5 +1,3 @@
-import Nav from '../components/Nav'
-import Footer from '../components/Footer'
 import ComplexProject from '../components/complexProject'
 
 import { FaCalculator, FaCamera, FaShip } from 'react-icons/fa'
@@ -8,7 +6,6 @@ import { GrPersonalComputer } from 'react-icons/Gr'
 const Projects = () => {
   return (
     <div id='projects' className='max-w-5xl mx-auto'>
-      <Nav />
       <ComplexProject
         icon={<FaCalculator />}
         title={'Calculadora Solar'}
@@ -57,7 +54,6 @@ const Projects = () => {
           'https://app.estudiocactus.com/visitor-hsse/map/losAngeles/'
         }
       />
-      <Footer />
     </div>
   )
 }

@@ -18,3 +18,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.image:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
