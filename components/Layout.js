@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Nav from './Nav'
 import Footer from './Footer'
-import Gallery from './Gallery'
 
 import { useState } from 'react'
 

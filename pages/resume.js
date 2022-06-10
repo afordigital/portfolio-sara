@@ -9,8 +9,6 @@ import {
 } from 'react-icons/fa'
 
 import Table from '../components/Table'
-import Nav from '../components/Nav'
-import Footer from '../components/Footer'
 import Skill from '../components/common/skill'
 
 const Resume = () => {

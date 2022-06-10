@@ -1,25 +1,23 @@
 import { GoProject } from 'react-icons/go'
 import { FaImages } from 'react-icons/fa'
+import { useState } from 'react'
 
 import Project from './common/project'
 import Render from './common/render'
-
-import { projects, renders } from '../config/projects'
-
-import { useState } from 'react'
 import Gallery from './Gallery'
+import { projects, renders } from '../config/projects'
 
 const Main = () => {
   const [openGallery, setOpenGallery] = useState(false)
   const [selectedImage, setSelectedImage] = useState(null)
+  const targetIds = ['image-container', 'prevButton', 'nextButton']
 
   return (
     <div
       id='main'
       className='max-w-5xl mx-auto'
       onClick={e => {
-        console.log(e.target.id)
-        if (e.target.id !== 'image-container' && openGallery) {
+        if (!targetIds.includes(e.target.id) && openGallery) {
           setOpenGallery(false)
           setSelectedImage(null)
         }

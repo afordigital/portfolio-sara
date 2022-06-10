@@ -1,7 +1,7 @@
 import Image from 'next/Image'
 import { renders } from '../config/projects'
 
-const Gallery = ({ selectedImage, setSelectedImage }) => {
+const Gallery = ({ selectedImage }) => {
   return (
     <div className='w-screen h-screen fixed top-0 left-0 bg-black bg-opacity-50 flex justify-center items-center z-50'>
       <div className='w-1/2 h-3/4 relative'>
@@ -14,6 +14,7 @@ const Gallery = ({ selectedImage, setSelectedImage }) => {
         />
       </div>
       <p
+        id='prevButton'
         className='absolute top-0 left-0 text-white'
         onClick={() => {
           if (selectedImage > 0) {
@@ -24,6 +25,7 @@ const Gallery = ({ selectedImage, setSelectedImage }) => {
         Previous
       </p>
       <p
+        id='nextButton'
         className='absolute top-0 right-8 text-white'
         onClick={() => {
           if (selectedImage < renders.length - 1) {
