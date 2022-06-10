@@ -3,17 +3,17 @@ import { complexProjects } from '../config/projects'
 
 const Projects = () => {
   return (
-    <div id='projects' className='max-w-5xl mx-auto'>
-      {complexProjects.map(cproject => {
+    <div id='projects' className='max-w-5xl mx-auto space-y-12'>
+      {complexProjects.map(complexProject => {
         return (
           <ComplexProject
-            key={cproject.title}
-            icon={cproject.icon}
-            title={cproject.title}
-            src={cproject.src}
-            description={cproject.description}
-            softwares={cproject.softwares}
-            hrefbutton={cproject.hrefbutton}
+            key={complexProject.title}
+            icon={complexProject.icon}
+            title={complexProject.title}
+            src={complexProject.src}
+            description={complexProject.description}
+            softwares={complexProject.softwares}
+            hrefbutton={complexProject.hrefbutton}
           ></ComplexProject>
         )
       })}

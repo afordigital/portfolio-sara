@@ -31,7 +31,7 @@ const Table = ({
           </div>
           <div className='flex'>
             {iconDate}
-            <p className='pl-2'>{date}</p>
+            <p className='pl-2 pb-2'>{date}</p>
           </div>
           <p>{description}</p>
         </div>

@@ -1,6 +1,8 @@
 import Image from 'next/Image'
 import { renders } from '../config/projects'
 
+import { MdArrowBackIos, MdOutlineNavigateNext } from 'react-icons/Md'
+
 const Gallery = ({ selectedImage }) => {
   return (
     <div className='w-screen h-screen fixed top-0 left-0 bg-black bg-opacity-50 flex justify-center items-center z-50'>
@@ -22,6 +24,7 @@ const Gallery = ({ selectedImage }) => {
           }
         }}
       >
+        {/* <MdArrowBackIos /> */}
         Previous
       </p>
       <p
@@ -33,6 +36,7 @@ const Gallery = ({ selectedImage }) => {
           }
         }}
       >
+        {/* <MdOutlineNavigateNext /> */}
         Next
       </p>
     </div>

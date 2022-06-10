@@ -9,7 +9,7 @@ import {
 } from 'react-icons/fa'
 
 import Table from '../components/Table'
-import Skill from '../components/common/skill'
+import { Tables, TablesLabExp } from '../config/projects'
 
 const Resume = () => {
   return (
@@ -50,99 +50,19 @@ const Resume = () => {
           <h2 className='pl-4'>Habilidades</h2>
         </div>
         <div className='space-y-10'>
-          <Table
-            title={'Frontend'}
-            skill1={
-              <Skill image={'/resume-icons/react.svg'} description={'React'} />
-            }
-            skill2={
-              <Skill
-                image={'/resume-icons/nextjs.svg'}
-                description={'NextJS'}
+          {Tables.map(table => {
+            return (
+              <Table
+                key={table.title}
+                title={table.title}
+                skill1={table.skill1}
+                skill2={table.skill2}
+                skill3={table.skill3}
+                skill4={table.skill4}
+                skill5={table.skill5}
               />
-            }
-            skill3={
-              <Skill
-                image={'/resume-icons/js.svg'}
-                description={'JavaScript'}
-              />
-            }
-            skill4={
-              <Skill image={'/resume-icons/html.svg'} description={'HTML'} />
-            }
-            skill5={
-              <Skill image={'/resume-icons/css.svg'} description={'CSS'} />
-            }
-          />
-          <Table
-            title={'Diseño Gráfico'}
-            skill1={
-              <Skill image={'/resume-icons/figma.svg'} description={'Figma'} />
-            }
-            skill2={
-              <Skill
-                image={'/resume-icons/photoshop.svg'}
-                description={'Photoshop'}
-              />
-            }
-            skill3={
-              <Skill
-                image={'/resume-icons/illustrator.svg'}
-                description={'Illustrator'}
-              />
-            }
-            skill4={
-              <Skill
-                image={'/resume-icons/indesign.svg'}
-                description={'InDesign'}
-              />
-            }
-            skill5={
-              <Skill
-                image={'/resume-icons/after-effects.svg'}
-                description={'After Effects'}
-              />
-            }
-          />
-          <Table
-            title={'Softwares 3D'}
-            skill1={
-              <Skill
-                image={'/resume-icons/3dsmax.svg'}
-                description={'3ds Max'}
-              />
-            }
-            skill2={
-              <Skill image={'/resume-icons/vray.svg'} description={'V-Ray 5'} />
-            }
-            skill3={
-              <Skill
-                image={'/resume-icons/verge.svg'}
-                description={'Verge 3D'}
-              />
-            }
-            skill4={
-              <Skill
-                image={'/resume-icons/blender.svg'}
-                description={'Blender'}
-              />
-            }
-          />
-          <Table
-            title={'Herramientas'}
-            skill1={
-              <Skill
-                image={'/resume-icons/github.svg'}
-                description={'Github'}
-              />
-            }
-            skill2={
-              <Skill
-                image={'/resume-icons/vs-code.svg'}
-                description={'VS Code'}
-              />
-            }
-          />
+            )
+          })}
         </div>
       </div>
       <div className='my-10'>
@@ -151,30 +71,19 @@ const Resume = () => {
           <h2 className='pl-4'>Experiencia Laboral</h2>
         </div>
         <div className='space-y-10'>
-          <Table
-            title={'Artista Técnica'}
-            place={'Estudio Cactus'}
-            iconPlace={<FaRegBuilding />}
-            date={'Sept 2021 - Actual'}
-            iconDate={<FaCalendarAlt />}
-            description={'Trabaje en tal y tal y tal'}
-          />
-          <Table
-            title={'Programadora Web'}
-            place={'Mandarina Webs'}
-            iconPlace={<FaRegBuilding />}
-            date={'Autónoma'}
-            iconDate={<FaCalendarAlt />}
-            description={'Trabaje en tal y tal y tal'}
-          />
-          <Table
-            title={'Artista de CGI en Nuxot'}
-            place={'Nuxot'}
-            iconPlace={<FaRegBuilding />}
-            date={'Enero 2021 - Junio 2021'}
-            iconDate={<FaCalendarAlt />}
-            description={'Trabaje en tal y tal y tal'}
-          />
+          {TablesLabExp.map(tableLabExp => {
+            return (
+              <Table
+                key={tableLabExp.title}
+                title={tableLabExp.title}
+                place={tableLabExp.place}
+                iconPlace={tableLabExp.iconPlace}
+                date={tableLabExp.date}
+                iconDate={tableLabExp.iconDate}
+                description={tableLabExp.description}
+              />
+            )
+          })}
         </div>
       </div>
       <div className='my-10'>
@@ -184,11 +93,13 @@ const Resume = () => {
         </div>
         <Table
           title={'Diseño y Desarrollo de Videojuegos'}
-          place={'Universitat Jaume I'}
+          place={'Universitat Jaume I, Castellón'}
           iconPlace={<FaRegBuilding />}
           date={'Septiembre 2016 - Enero 2022'}
           iconDate={<FaCalendarAlt />}
-          description={'Trabaje en tal y tal y tal'}
+          description={
+            'Elegí esta universidad motivada por su amplia enseñanza en programación, matemáticas, algorítmica y bases de datos, entre otros. Ahí pude desarrollar mi interés por combinarlo con disciplinas artísticas para crear experiencias en los jugadores.'
+          }
         />
       </div>
     </div>
