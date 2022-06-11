@@ -1,0 +1,25 @@
+void insertar(float dato, int i) {
+    Nodo * n = primero;
+    Nodo * ant = nullptr;
+    int cont = 1;
+
+
+    if (primero==nullptr){
+        primero = new Nodo(dato, nullptr);
+        talla++;
+        return;
+    }
+    while(n!=nullptr){
+        Nodo * nuevo = new Nodo(dato);
+        if (i==cont){
+            Nodo * nuevo = new Nodo (dato);
+            nuevo-> sig = n->sig;
+            n->sig = nuevo;
+            talla ++;
+            return;
+        }
+        n=n->sig;
+        ant=n;
+        cont++;
+    }
+}

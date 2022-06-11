@@ -3,7 +3,7 @@ import { complexProjects } from '../config/projects'
 
 const Projects = () => {
   return (
-    <div id='projects' className='max-w-5xl mx-auto space-y-12'>
+    <div id='projects' className='max-w-5xl mx-auto space-y-2'>
       {complexProjects.map(complexProject => {
         return (
           <ComplexProject

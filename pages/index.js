@@ -14,8 +14,8 @@ const Home = () => {
 
   return (
     <div
-      id='main'
-      className='max-w-5xl mx-auto '
+      id='home'
+      className='max-w-5xl mx-auto'
       onClick={e => {
         if (!targetIds.includes(e.target.id) && openGallery) {
           setOpenGallery(false)

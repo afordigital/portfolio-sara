@@ -2,14 +2,9 @@ import {
   FaCalculator,
   FaCamera,
   FaShip,
-  FaCode,
-  FaSuitcase,
-  FaUniversity,
   FaRegBuilding,
-  FaCalendarAlt,
-  FaUser
+  FaCalendarAlt
 } from 'react-icons/fa'
-import { GrPersonalComputer } from 'react-icons/Gr'
 
 import Skill from '../components/common/skill'
 
@@ -39,7 +34,7 @@ export const projects = [
 export const renders = [
   '/preview-1.jpg',
   '/preview-2.jpg',
-  '/preview-3.jpg',
+  '/preview-5.jpg',
   '/preview-4.jpg'
 ]
 
@@ -54,7 +49,7 @@ export const complexProjects = [
     hrefbutton: 'https://sima.mandarinaservices.com/calculadora/%27%7D'
   },
   {
-    icon: <GrPersonalComputer />,
+    icon: <FaCalculator />,
     title: 'Posicionamiento Web',
     src: '/proyecto2.JPG',
     description:

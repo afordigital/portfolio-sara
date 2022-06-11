@@ -19,7 +19,7 @@ const Resume = () => {
         <h2 className='pl-4'>Resume</h2>
       </div>
       <div className='flex items-center pb-10'>
-        <div className='flex flex-col w-2/3'>
+        <div className='flex flex-col'>
           <p className='flex items-center pr-8 pb-4 text-xl'>
             Me considero una persona con mucha pasión por lo que hace. Mi
             objetivo en mi carrera profesional es seguir formándome hasta llegar
@@ -38,10 +38,10 @@ const Resume = () => {
         <Image
           src='/img-portfolio.jpg'
           alt='Picture of the author'
-          width={220}
-          height={220}
+          width={600}
+          height={600}
           objectFit='cover'
-          className='rounded-full w-1/3'
+          className='rounded-full'
         />
       </div>
       <div className='my-10'>

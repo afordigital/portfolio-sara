@@ -22,5 +22,5 @@ a {
 .image:hover {
   transform: scale(1.1);
   cursor: pointer;
-  transition: all 300ms ease-in-out;
+  transition: 300ms ease-in-out;
 }

@@ -12,7 +12,7 @@ const ComplexProject = ({
 }) => {
   return (
     <div>
-      <div className='flex pb-12 text-4xl font-bold'>
+      <div className='flex pb- text-4xl font-bold'>
         {icon}
         <h2 className='pl-4'>{title}</h2>
       </div>
@@ -23,15 +23,24 @@ const ComplexProject = ({
             alt='Proyecto 1'
             width={320}
             height={270}
-            objectFit='cover'
+            objectFit='contain'
           />
         </div>
+
         <div className='w-2/3'>
-          <Button href={hrefbutton} text={'Visitar'} />
-          <p className='pt-6'>{description}</p>
+          <p>{description}</p>
           <br />
-          <h3 className='font-semibold'>Tecnologías usadas:</h3>
-          <p>{softwares}</p>
+          <div className='flex items-center space-x-12 w-full'>
+            <div className='w-full'>
+              <h3 className='font-semibold'>Tecnologías usadas:</h3>
+              <div className='flex space-x-12'>
+                <p>{softwares}</p>
+              </div>
+            </div>
+            <div className='mt-2'>
+              <Button href={hrefbutton} text={'Visitar'} />
+            </div>
+          </div>
         </div>
       </div>
     </div>
