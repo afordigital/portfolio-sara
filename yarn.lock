@@ -46,6 +46,11 @@
   "resolved" "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz"
   "version" "1.2.1"
 
+"@juggle/resize-observer@^3.3.0":
+  "integrity" "sha512-zMM9Ds+SawiUkakS7y94Ymqx+S0ORzpG3frZirN3l+UlXUmSUR7hF4wxCVqW+ei94JzV5kt0uXBcoOEAuiydrw=="
+  "resolved" "https://registry.npmjs.org/@juggle/resize-observer/-/resize-observer-3.3.1.tgz"
+  "version" "3.3.1"
+
 "@next/env@12.1.6":
   "integrity" "sha512-Te/OBDXFSodPU6jlXYPAXpmZr/AkG6DCATAxttQxqOWaq6eDFX25Db3dK0120GZrSZmv4QCe9KsZmJKDbWs4OA=="
   "resolved" "https://registry.npmjs.org/@next/env/-/env-12.1.6.tgz"
@@ -83,6 +88,40 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.5"
     "fastq" "^1.6.0"
+
+"@react-md/icon@^5.1.3":
+  "integrity" "sha512-GCgNmj3bqKhG4FuEud83ffBbtyytLlFNQ2nRPWdzqzi5C3UzEn1p6tn5AwUQTqP6Anf51d6qPXl49+lEk8bkrA=="
+  "resolved" "https://registry.npmjs.org/@react-md/icon/-/icon-5.1.3.tgz"
+  "version" "5.1.3"
+  dependencies:
+    "@react-md/theme" "^5.1.3"
+    "@react-md/typography" "^5.1.3"
+    "@react-md/utils" "^5.1.3"
+    "classnames" "^2.3.1"
+
+"@react-md/theme@^5.1.3":
+  "integrity" "sha512-Hsj9+UfrhIcPS88s+WCVvFRWZ1f+p/lAT18W4D/o+LiKBYZKb/lKZgC8d8oBdzUyXoFW9T49TS5ZrYtba8nz/Q=="
+  "resolved" "https://registry.npmjs.org/@react-md/theme/-/theme-5.1.3.tgz"
+  "version" "5.1.3"
+  dependencies:
+    "@react-md/utils" "^5.1.3"
+
+"@react-md/typography@^5.1.3":
+  "integrity" "sha512-3ormhB3/lwm5Bvq2lehVbY7Q/wP5WznL03dg+mh5EudyyQE0gJ8v7f06l1rMI96O34fjuhdKY/0Qz9u51rvnsg=="
+  "resolved" "https://registry.npmjs.org/@react-md/typography/-/typography-5.1.3.tgz"
+  "version" "5.1.3"
+  dependencies:
+    "@react-md/theme" "^5.1.3"
+    "@react-md/utils" "^5.1.3"
+    "classnames" "^2.3.1"
+
+"@react-md/utils@^5.1.3":
+  "integrity" "sha512-orSXDoYa655vCvnpAWCjCtTGc/t8XQKimSn61SIZ5Y7a5oY/ft7n9pLraf921zsfvUIhqnd0e+tPQBd9L9OPQA=="
+  "resolved" "https://registry.npmjs.org/@react-md/utils/-/utils-5.1.3.tgz"
+  "version" "5.1.3"
+  dependencies:
+    "@juggle/resize-observer" "^3.3.0"
+    "classnames" "^2.3.1"
 
 "@rushstack/eslint-patch@^1.1.3":
   "integrity" "sha512-WiBSI6JBIhC6LRIsB2Kwh8DsGTlbBU+mLRxJmAe3LjHTdkDpwIbEOZgoXBbZilk/vlfjK8i6nKRAvIRn1XaIMw=="
@@ -359,6 +398,11 @@
     "readdirp" "~3.6.0"
   optionalDependencies:
     "fsevents" "~2.3.2"
+
+"classnames@^2.3.1":
+  "integrity" "sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA=="
+  "resolved" "https://registry.npmjs.org/classnames/-/classnames-2.3.1.tgz"
+  "version" "2.3.1"
 
 "color-convert@^2.0.1":
   "integrity" "sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ=="
@@ -1517,7 +1561,7 @@
   "resolved" "https://registry.npmjs.org/quick-lru/-/quick-lru-5.1.1.tgz"
   "version" "5.1.1"
 
-"react-dom@^17.0.2 || ^18.0.0-0", "react-dom@18.1.0":
+"react-dom@^17.0.2 || ^18.0.0-0", "react-dom@>= 16.14", "react-dom@18.1.0":
   "integrity" "sha512-fU1Txz7Budmvamp7bshe4Zi32d0ll7ect+ccxNu9FlObT605GOEB8BfO4tmRJ39R5Zj831VCpvQ05QPBW5yb+w=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.1.0.tgz"
   "version" "18.1.0"
@@ -1535,7 +1579,7 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   "version" "16.13.1"
 
-"react@*", "react@^17.0.2 || ^18.0.0-0", "react@^18.1.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@18.1.0":
+"react@*", "react@^17.0.2 || ^18.0.0-0", "react@^18.1.0", "react@>= 16.14", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@18.1.0":
   "integrity" "sha512-4oL8ivCz5ZEPyclFQXaNksK3adutVS8l2xzZU0cqEFrE9Sb7fC0EFK5uEk74wIreL1DERyjvsU915j1pcT2uEQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.1.0.tgz"
   "version" "18.1.0"
