@@ -1,4 +1,4 @@
-import Image from 'next/Image'
+import Image from 'next/image'
 import { renders } from '../config/projects'
 
 import { FaLessThan, FaGreaterThan } from 'react-icons/fa'
