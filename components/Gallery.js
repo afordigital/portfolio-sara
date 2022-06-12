@@ -15,7 +15,7 @@ const Gallery = ({ selectedImage, setSelectedImage }) => {
           objectFit='contain'
         />
       </div>
-      <p
+      <div
         id='prevButton'
         className='absolute top-1/2 left-0 text-white cursor-pointer'
         onClick={() => {
@@ -26,8 +26,8 @@ const Gallery = ({ selectedImage, setSelectedImage }) => {
       >
         Prev
         <FaLessThan />
-      </p>
-      <p
+      </div>
+      <div
         id='nextButton'
         className='absolute top-1/2 right-8 text-white cursor-pointer'
         onClick={() => {
@@ -38,7 +38,7 @@ const Gallery = ({ selectedImage, setSelectedImage }) => {
       >
         Sig
         <FaGreaterThan />
-      </p>
+      </div>
     </div>
   )
 }

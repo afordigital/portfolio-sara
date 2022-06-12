@@ -14,7 +14,7 @@ import { Tables, TablesLabExp } from '../config/projects'
 const Resume = () => {
   return (
     <div id='resume' className='max-w-5xl mx-auto'>
-      <div className='flex pb-4 text-4xl font-bold'>
+      <div className='flex pb-4 text-2xl md:text-4xl font-bold'>
         <FaUser />
         <h2 className='pl-4'>Resume</h2>
       </div>
@@ -44,6 +44,7 @@ const Resume = () => {
           className='rounded-full'
         />
       </div>
+
       <div className='my-10'>
         <div className='flex pb-8 text-4xl font-bold'>
           <FaCode />
@@ -66,7 +67,7 @@ const Resume = () => {
         </div>
       </div>
       <div className='my-10'>
-        <div className='flex pb-8 text-4xl font-bold'>
+        <div className='flex pb-8 text-2xl md:text-4xl font-bold'>
           <FaSuitcase />
           <h2 className='pl-4'>Experiencia Laboral</h2>
         </div>

@@ -3,11 +3,11 @@ import { FaGithub, FaArtstation, FaLinkedinIn } from 'react-icons/fa'
 const Footer = () => {
   return (
     <div id='footer' className='max-w-5xl mx-auto pt-16 pb-8'>
-      <div className='flex justify-center text-xl font-semibold'>
+      <div className='flex justify-center text-lg md:text-xl font-semibold'>
         <h1>Sara Montagud - Portfolio</h1>
-        <div className='flex justify-center space-x-3 pl-3'>
+        <div className='flex space-x-3 pl-3'>
           <a href='https://github.com/Aforina' className='cursor-pointer'>
-            <FaGithub size={30} />
+            <FaGithub size={30} className />
           </a>
           <a
             href='https://www.artstation.com/saramontagud'

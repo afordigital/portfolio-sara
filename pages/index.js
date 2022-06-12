@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div
       id='home'
-      className='max-w-5xl mx-auto'
+      className='max-w-5xl mx-auto p-8 md:p-0'
       onClick={e => {
         if (!targetIds.includes(e.target.id) && openGallery) {
           setOpenGallery(false)
@@ -29,23 +29,21 @@ const Home = () => {
           setSelectedImage={setSelectedImage}
         />
       )}
-      <div className='flex justify-center pb-4'>
-        <h1 className='h-24 text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-blue-500 text-6xl font-extrabold'>
-          Hola, soy Sara Montagud
-        </h1>
-      </div>
-      <div className='flex justify-center text-xl pb-14'>
+      <h1 className='flex pb-4 md:h-24 text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-blue-500 text-2xl md:text-6xl font-extrabold'>
+        Hola, soy Sara Montagud
+      </h1>
+      <div className='flex justify-center text-lg md:text-xl pb-14'>
         <p>
           Siéntete cómodo de navegar por mis proyectos de programación y 3D,
           también puedes encontrar información sobre mí. Si te gusta lo que ves
           no dudes en contactarme!
         </p>
       </div>
-      <div className='flex pb-12 text-4xl font-bold'>
+      <div className='flex pb-12 text-2xl md:text-4xl font-bold'>
         <GoProject />
         <h2 className='pl-4'>Proyectos principales</h2>
       </div>
-      <div className='grid grid-cols-2 gap-8'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
         {projects.map(project => {
           return (
             <Project
@@ -56,14 +54,14 @@ const Home = () => {
           )
         })}
       </div>
-      <div className='flex pt-12 pb-8 text-4xl font-bold'>
+      <div className='flex pt-12 pb-8 text-2xl md:text-4xl font-bold'>
         <FaImages />
         <h2 className='pl-4'>Otros proyectos</h2>
       </div>
       <p className='pl-4 pb-8 text-xl'>
         Infografías 3D realizadas con 3ds Max y V-Ray
       </p>
-      <div className='grid grid-cols-2 gap-8'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
         {renders.map((render, index, array) => {
           return (
             <Render

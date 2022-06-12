@@ -23,3 +23,39 @@ void insertar(float dato, int i) {
         cont++;
     }
 }
+
+-------------------------------------------------------------------------
+
+void Lista::eliminar(int posicion){
+    if (primero==nullptr){  //si esta vacia
+        throw string('Intentando eliminar un elemento en una lista vacia');        
+    }
+    if(posicion==0){    // si es el primero
+        Nodo * basura = primero;
+        if (primero == ultimo){ // si solo hay un elemento
+            primero = ultimo = nullptr;
+        }else{
+            primero = primero->siguiente;
+        }
+        
+        delete basura;
+        return;
+    }
+    eliminar (posicion, primero, 0);
+}
+
+void Lista::eliminar(int posicion, Nodo*actual, int contador){
+    if (contador+1 == posicion){
+        Nodo * basura = actual->siguiente;
+        if (actual->siguiente == ultimo){
+            actual->siguiente = nullptr;
+            ultimo = actual;
+            delete basura;
+            return;
+        }
+        actual->siguiente = actual->siguiente->siguiente;
+        delete basura;
+        return;
+    }
+    eliminar(posicion, actual->siguiente, contador+1);
+}

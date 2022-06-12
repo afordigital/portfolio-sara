@@ -3,7 +3,8 @@ import {
   FaCamera,
   FaShip,
   FaRegBuilding,
-  FaCalendarAlt
+  FaCalendarAlt,
+  FaChartBar
 } from 'react-icons/fa'
 
 import Skill from '../components/common/skill'
@@ -49,7 +50,7 @@ export const complexProjects = [
     hrefbutton: 'https://sima.mandarinaservices.com/calculadora/%27%7D'
   },
   {
-    icon: <FaCalculator />,
+    icon: <FaChartBar />,
     title: 'Posicionamiento Web',
     src: '/proyecto2.JPG',
     description:
