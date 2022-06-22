@@ -34,7 +34,7 @@ const Nav = () => {
                   className={
                     router.route === link.href
                       ? 'bg-gray-100 py-2 px-4 rounded-md cursor-pointer ease-linear duration-300'
-                      : 'px-4'
+                      : 'px-4 hover:bg-gray-100 py-2 rounded-md'
                   }
                 >
                   {link.name}

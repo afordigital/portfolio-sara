@@ -59,3 +59,39 @@ void Lista::eliminar(int posicion, Nodo*actual, int contador){
     }
     eliminar(posicion, actual->siguiente, contador+1);
 }
+
+---------------------------------------------------------------------
+
+void eliminarMinimo(){
+    if (primero==nullptr) //cola vacia
+        throw string('intentando eliminar de cola vacia')
+
+    // solo hay un elemento + caso general
+
+    Nodo * basura = primero;
+    primero=primero->siguiente;
+    delete basura;
+
+    if(primero==nullptr)
+        return; //solo habia un elemento en la cola
+
+    Nodo * minimo = primero;
+    while(n!=nullptr){
+        if (n->dato < minimo->dato) {
+            minimo = n;
+        }
+        n=n->siguiente;
+    }
+
+    while(n!=nullptr){
+        if (n->siguiente==minimo){
+            basura = n->siguiente; //basura lo has creado al principio, reutilizamos
+            n->siguiente=n->siguiente->siguiente;
+            delete basura;
+        }
+    }
+
+    minimo->siguiente = primero;
+    primero = minimo;
+}
+
