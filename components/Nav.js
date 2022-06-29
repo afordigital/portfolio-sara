@@ -4,11 +4,13 @@ import { useRouter } from 'next/router'
 import { useState } from 'react'
 import { links } from '../config/links.js'
 
-import { FaBars } from 'react-icons/fa'
+import { FaBars, FaSun, FaMoon } from 'react-icons/fa'
 
 const Nav = () => {
   const router = useRouter()
   const [openMenu, setOpenMenu] = useState(false)
+
+  const [colorMode, setColorMode] = useState('light')
 
   return (
     <div id='nav' className='w-full pt-10 md:pb-10'>
@@ -42,6 +44,20 @@ const Nav = () => {
               </Link>
             )
           })}
+        </div>
+        <div className='pl-10 py-2 px-2 '>
+          <div
+            className='p-2 rounded-md cursor-pointer ease-linear duration-300 bg-gray-100'
+            onClick={e => {
+              if (colorMode == 'light') {
+                setColorMode('dark')
+              } else {
+                setColorMode('light')
+              }
+            }}
+          >
+            {colorMode == 'light' ? <FaMoon /> : <FaSun />}
+          </div>
         </div>
       </div>
     </div>

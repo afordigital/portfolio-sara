@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-const Skill = ({ image, description, imageSize }) => {
+const Skill = ({ image, description }) => {
   return (
     <div>
       <div className='flex flex-col space-y-2'>

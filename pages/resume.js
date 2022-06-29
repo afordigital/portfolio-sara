@@ -145,6 +145,8 @@ const Resume = () => {
         </div>
         <ExpTable
           title={'Charla en'}
+          date={'Abril 2020'}
+          iconDate={<FaCalendarAlt />}
           description={
             'Charla en la plataforma de streaming Twitch para concienciar al público sobre las barreras de ser mujer en el sector tecnológico. Respaldado por la empresa del sector de los videojuegos Women in Games.'
           }

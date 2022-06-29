@@ -9,8 +9,8 @@ const Render = ({ title, image, onClick }) => {
           alt='Picture of the author'
           width={500}
           height={302}
-          className='image'
-        ></Image>
+          className=''
+        />
         <div
           className='absolute
           top-0
@@ -23,7 +23,7 @@ const Render = ({ title, image, onClick }) => {
           hover:opacity-40 transition duration-300'
         >
           <p className='w-full h-full text-white flex justify-center items-center text-2xl font-semibold cursor-pointer'>
-            Render 01
+            Render
           </p>
         </div>
       </div>
