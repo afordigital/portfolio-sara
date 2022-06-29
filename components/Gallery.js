@@ -24,8 +24,7 @@ const Gallery = ({ selectedImage, setSelectedImage }) => {
           }
         }}
       >
-        Prev
-        <FaLessThan />
+        Anterior
       </div>
       <div
         id='nextButton'
@@ -36,8 +35,7 @@ const Gallery = ({ selectedImage, setSelectedImage }) => {
           }
         }}
       >
-        Sig
-        <FaGreaterThan />
+        Siguiente
       </div>
     </div>
   )

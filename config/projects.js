@@ -33,10 +33,12 @@ export const projects = [
 ]
 
 export const renders = [
-  '/preview-1.jpg',
   '/preview-2.jpg',
+  '/preview-1.jpg',
   '/preview-5.jpg',
-  '/preview-4.jpg'
+  '/preview-8.jpg',
+  '/preview-4.jpg',
+  '/preview-3.jpg'
 ]
 
 export const complexProjects = [
@@ -138,8 +140,13 @@ export const TablesLabExp = [
     iconPlace: <FaRegBuilding />,
     date: 'Sept 2021 - Actual',
     iconDate: <FaCalendarAlt />,
-    description:
-      'Start-up tecnológica en la que trabajo actualmente en proyectos relacionados con la programación de aplicaciones 3D e imágenes hiperrealistas.'
+    description: 'Retos enfrentados en esta start-up tecnológica:',
+    labor1:
+      'Desarrollo de aplicaciones 3D con softwares actuales como Verge3D, JavaScript, HTML y CSS.',
+    labor2: 'Creación de Landing Pages con React, NextJS y Tailwindcss.',
+    labor3:
+      'Realización de imágenes CGI en 3ds Max y V-Ray 5 con múltiples estilos de interiorismo.',
+    showList: true
   },
   {
     title: 'Programadora Web',
@@ -147,8 +154,12 @@ export const TablesLabExp = [
     iconPlace: <FaRegBuilding />,
     date: 'Autónoma',
     iconDate: <FaCalendarAlt />,
-    description:
-      'Empresa de desarrollo web con la que he colaborado en múltiples proyectos, especialmente con JavaScript y Wordpress.'
+    description: 'Retos enfrentados en esta empresa de marketing digital:',
+    labor1:
+      'Desarrollo de un plugin para Wordpress consistente en una calculadora solar.',
+    labor2: 'Realización de un branding profesional para una tienda de ropa.',
+    labor3: 'Venta de servicios web como teleoperadora y vendedora.',
+    showList: true
   },
   {
     title: 'Artista en CGI',
@@ -156,7 +167,11 @@ export const TablesLabExp = [
     iconPlace: <FaRegBuilding />,
     date: 'Enero 2021 - Junio 2021',
     iconDate: <FaCalendarAlt />,
-    description:
-      'Pequeña empresa de CGI donde pude realizar mis prácticas y empezar mi carrera laboral desarrollándome en el estudio del arte hiperrealista 3D.'
+    description: 'Retos enfrentados en esta empresa: ',
+    labor1:
+      'Realización de imágenes CGI para arquitectura en 3ds Max y V-Ray 5.',
+    labor2: 'Postprocesado de imágenes en Photoshop.',
+    labor3: 'Estudio y creación de materiales PBR.',
+    showList: true
   }
 ]

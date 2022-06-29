@@ -2,7 +2,7 @@ import { FaGithub, FaArtstation, FaLinkedinIn } from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <div id='footer' className='max-w-5xl mx-auto pt-16 pb-8'>
+    <div id='footer' className='max-w-5xl mx-auto md:pt-16 pb-8'>
       <div className='flex justify-center text-lg md:text-xl font-semibold'>
         <h1>Sara Montagud - Portfolio</h1>
         <div className='flex space-x-3 pl-3'>

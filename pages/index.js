@@ -58,8 +58,10 @@ const Home = () => {
         <FaImages />
         <h2 className='pl-4'>Otros proyectos</h2>
       </div>
-      <p className='pl-4 pb-8 text-xl'>
-        Infografías 3D realizadas con 3ds Max y V-Ray
+      <p className='pl-4 pb-8 text-lg md:text-xl'>
+        Te presento mi galería de imágenes CGI realizadas con 3ds Max y V-Ray 5.
+        Estos son algunos de los proyectos en los que he trabajado en los
+        últimos años de experiencia laboral.
       </p>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
         {renders.map((render, index, array) => {
