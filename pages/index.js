@@ -29,7 +29,7 @@ const Home = () => {
           setSelectedImage={setSelectedImage}
         />
       )}
-      <h1 className='flex justify-center pb-4 md:h-24 text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-blue-500 text-2xl md:text-6xl font-extrabold'>
+      <h1 className='flex justify-center pb-4 md:h-24 text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-blue-500 dark:from-yellow-300 dark:to-emerald-500 text-2xl md:text-6xl font-extrabold'>
         Hola, soy Sara Montagud
       </h1>
       <div className='flex justify-center text-lg md:text-xl pb-14'>

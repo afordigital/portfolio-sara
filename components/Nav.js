@@ -1,3 +1,4 @@
+import { useTheme } from 'next-themes'
 import Menu from './Menu.js'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
@@ -10,7 +11,7 @@ const Nav = () => {
   const router = useRouter()
   const [openMenu, setOpenMenu] = useState(false)
 
-  const [colorMode, setColorMode] = useState('light')
+  const { theme, setTheme } = useTheme()
 
   return (
     <div id='nav' className='w-full pt-10 md:pb-10'>
@@ -35,8 +36,8 @@ const Nav = () => {
                 <a
                   className={
                     router.route === link.href
-                      ? 'bg-gray-100 py-2 px-4 rounded-md cursor-pointer ease-linear duration-300'
-                      : 'px-4 hover:bg-gray-100 py-2 rounded-md'
+                      ? 'bg-gray-100 dark:bg-[#2c313d] py-2 px-4 rounded-md cursor-pointer ease-linear duration-300'
+                      : 'px-4 hover:bg-gray-100 dark:hover:bg-[#2c313d] py-2 rounded-md'
                   }
                 >
                   {link.name}
@@ -47,16 +48,10 @@ const Nav = () => {
         </div>
         <div className='pl-10 py-2 px-2 '>
           <div
-            className='p-2 rounded-md cursor-pointer ease-linear duration-300 bg-gray-100'
-            onClick={e => {
-              if (colorMode == 'light') {
-                setColorMode('dark')
-              } else {
-                setColorMode('light')
-              }
-            }}
+            className='p-2 rounded-md cursor-pointer ease-linear duration-300 bg-gray-100 dark:bg-[#2c313d]'
+            onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
           >
-            {colorMode == 'light' ? <FaMoon /> : <FaSun />}
+            {theme === 'light' ? <FaMoon /> : <FaSun />}
           </div>
         </div>
       </div>

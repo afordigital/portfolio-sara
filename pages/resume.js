@@ -33,7 +33,7 @@ const Resume = () => {
           <a
             href={'/CV_Sara.pdf'}
             download
-            className='w-40 text-xl py-1.5 px-3 border-2 border-black rounded-lg font-medium hover:bg-black hover:text-white hover:ease-in transition duration-300'
+            className='w-40 text-xl py-1.5 px-3 border-2 border-black dark:border-gray-200 rounded-lg font-medium hover:bg-black hover:text-white hover:ease-in transition duration-300'
           >
             Descargar CV
           </a>
@@ -68,7 +68,7 @@ const Resume = () => {
           <a
             href={'/CV_Sara.pdf'}
             download
-            className='w-40 text-xl py-1.5 px-3 border-2 border-black rounded-lg font-medium hover:bg-black hover:text-white hover:ease-in transition duration-300'
+            className='w-40 text-xl py-1.5 px-3 border-2 border-black dark:border-gray-200 rounded-lg font-medium hover:bg-black hover:text-white hover:ease-in transition duration-300'
           >
             Descargar CV
           </a>
