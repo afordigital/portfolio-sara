@@ -65,7 +65,7 @@ export const complexProjects = [
     title: 'Alessio Muganni',
     src: '/proyecto3.JPG',
     description:
-      'Página estática hecha en React que mumestra el portfolio de un fotógrafo, con su información personal, mapa y un cuadro de contacto con validación de usuario realizada en Yup. Diseño original hecho en Figma.',
+      'Página estática hecha en React que muestra el portfolio de un fotógrafo, con su información personal, mapa y un cuadro de contacto con validación de usuario realizada en Yup. Diseño original hecho en Figma.',
     softwares: 'React | NextJS | TailwindCSS',
     hrefbutton: 'https://prueba-navy.vercel.app/'
   },
