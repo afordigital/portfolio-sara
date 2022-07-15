@@ -56,7 +56,7 @@ export const complexProjects = [
     title: 'Posicionamiento Web',
     src: '/proyecto2.JPG',
     description:
-      'Proyecto de calculadora solar realizado con JavaScript con un algoritmo de cálculo donde dependiendo de la orientación de tu tejado, el área de tu mapa importado con la librería Leaflet y vatios consumidos entre otros parámetros, calcula qué objetos necesitas para pasarte a usar energía solar y cuándo lo rentabilizas.',
+      'Página estática realizada en React para facilitar la información y la venta de un servicio de un cliente. Diseño original hecho en Figma.',
     softwares: 'React | NextJS | TailwindCSS',
     hrefbutton: 'https://posicionamiento-web.vercel.app/'
   },
@@ -65,7 +65,7 @@ export const complexProjects = [
     title: 'Alessio Muganni',
     src: '/proyecto3.JPG',
     description:
-      'Proyecto de calculadora solar realizado con JavaScript con un algoritmo de cálculo donde dependiendo de la orientación de tu tejado, el área de tu mapa importado con la librería Leaflet y vatios consumidos entre otros parámetros, calcula qué objetos necesitas para pasarte a usar energía solar y cuándo lo rentabilizas.',
+      'Página estática hecha en React que mumestra el portfolio de un fotógrafo, con su información personal, mapa y un cuadro de contacto con validación de usuario realizada en Yup. Diseño original hecho en Figma.',
     softwares: 'React | NextJS | TailwindCSS',
     hrefbutton: 'https://prueba-navy.vercel.app/'
   },
@@ -74,7 +74,7 @@ export const complexProjects = [
     title: 'Puerto de Los Ángeles',
     src: '/proyecto4.JPG',
     description:
-      'Proyecto de calculadora solar realizado con JavaScript con un algoritmo de cálculo donde dependiendo de la orientación de tu tejado, el área de tu mapa importado con la librería Leaflet y vatios consumidos entre otros parámetros, calcula qué objetos necesitas para pasarte a usar energía solar y cuándo lo rentabilizas.',
+      'Interfaz sencilla realizada en JavaScript y Verge3D que combina 3D y programación. A través de la leyenda de la interfaz puedes acceder a los puntos que te muestran giros de cámara e información sobre distintas secciones para mejorar la seguridad portuaria.',
     softwares: 'JavaScript | HTML | CSS | Verge3D',
     hrefbutton: 'https://app.estudiocactus.com/visitor-hsse/map/losAngeles/'
   }
