@@ -4,7 +4,8 @@ import {
   FaShip,
   FaRegBuilding,
   FaCalendarAlt,
-  FaChartBar
+  FaChartBar,
+  FaChalkboard
 } from 'react-icons/fa'
 
 import Skill from '../components/common/skill'
@@ -33,12 +34,12 @@ export const projects = [
 ]
 
 export const renders = [
-  '/preview-2.jpg',
-  '/preview-1.jpg',
-  '/preview-5.jpg',
   '/preview-8.jpg',
-  '/preview-4.jpg',
-  '/preview-3.jpg'
+  '/preview-2.jpg',
+  '/preview-10.jpg',
+  '/preview-9.jpg',
+  '/preview-1.jpg',
+  '/preview-4.jpg'
 ]
 
 export const complexProjects = [
@@ -52,20 +53,29 @@ export const complexProjects = [
     hrefbutton: 'https://sima.mandarinaservices.com/calculadora/%27%7D'
   },
   {
-    icon: <FaChartBar />,
+    icon: <FaChalkboard />,
     title: 'Posicionamiento Web',
     src: '/proyecto2.JPG',
     description:
-      'Página estática realizada en React para facilitar la información y la venta de un servicio de un cliente. Diseño original hecho en Figma.',
+      'Página estática realizada creada para facilitar la información de servicios de posicionamiento web con distintas tarifas con el objetivo de venta de estos servicios. Diseño original hecho en Figma.',
     softwares: 'React | NextJS | TailwindCSS',
     hrefbutton: 'https://posicionamiento-web.vercel.app/'
+  },
+  {
+    icon: <FaChartBar />,
+    title: 'Graphics',
+    src: '/proyecto5.JPG',
+    description:
+      'Página estática con un ejercicio sencillo de gráficos para aprender el uso de la librería ChartJS y practicar la gestión de JSONS con archivos locales. Diseño original hecho en Figma.',
+    softwares: 'React | NextJS | TailwindCSS | ChartJS',
+    hrefbutton: 'https://graphics-xi.vercel.app/'
   },
   {
     icon: <FaCamera />,
     title: 'Alessio Muganni',
     src: '/proyecto3.JPG',
     description:
-      'Página estática hecha en React que muestra el portfolio de un fotógrafo, con su información personal, mapa y un cuadro de contacto con validación de usuario realizada en Yup. Diseño original hecho en Figma.',
+      'Página estática de portfolio de un fotógrafo, con su información personal, mapa y un cuadro de contacto con validación de usuario realizada en Yup. Diseño original hecho en Figma.',
     softwares: 'React | NextJS | TailwindCSS',
     hrefbutton: 'https://prueba-navy.vercel.app/'
   },
