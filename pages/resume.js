@@ -76,27 +76,6 @@ const Resume = () => {
       </div>
 
       <div className='my-10'>
-        <div className='flex pb-8 text-2xl px-8 md:px-0 md:text-4xl font-bold'>
-          <FaCode />
-          <h2 className='pl-2 md:pl-4'>Habilidades</h2>
-        </div>
-        <div className='space-y-10'>
-          {Tables.map(table => {
-            return (
-              <Table
-                key={table.title}
-                title={table.title}
-                skill1={table.skill1}
-                skill2={table.skill2}
-                skill3={table.skill3}
-                skill4={table.skill4}
-                skill5={table.skill5}
-              />
-            )
-          })}
-        </div>
-      </div>
-      <div className='my-10'>
         <div className='flex pb-8 text-2xl md:text-4xl font-bold px-8 md:px-0'>
           <FaSuitcase />
           <h2 className='pl-2 md:pl-4'>Experiencia Laboral</h2>
@@ -121,6 +100,23 @@ const Resume = () => {
           })}
         </div>
       </div>
+
+      <div className='my-10'>
+        <div className='flex pb-8 text-2xl md:text-4xl font-bold px-8 md:px-0'>
+          <FaTrophy />
+          <h2 className='pl-2 md:pl-4'>Logros</h2>
+        </div>
+        <ExpTable
+          title={'Charla en'}
+          date={'Abril 2020'}
+          iconDate={<FaCalendarAlt />}
+          description={
+            'Charla en la plataforma de streaming Twitch para concienciar al público sobre las barreras de ser mujer en el sector tecnológico. Respaldado por la empresa del sector de los videojuegos Women in Games.'
+          }
+          showList={false}
+        />
+      </div>
+
       <div className='my-10'>
         <div className='flex pb-8 text-2xl md:text-4xl font-bold px-8 md:px-0'>
           <FaUniversity />
@@ -138,20 +134,27 @@ const Resume = () => {
           showList={false}
         />
       </div>
+
       <div className='my-10'>
-        <div className='flex pb-8 text-2xl md:text-4xl font-bold px-8 md:px-0'>
-          <FaTrophy />
-          <h2 className='pl-2 md:pl-4'>Logros</h2>
+        <div className='flex pb-8 text-2xl px-8 md:px-0 md:text-4xl font-bold'>
+          <FaCode />
+          <h2 className='pl-2 md:pl-4'>Habilidades</h2>
         </div>
-        <ExpTable
-          title={'Charla en'}
-          date={'Abril 2020'}
-          iconDate={<FaCalendarAlt />}
-          description={
-            'Charla en la plataforma de streaming Twitch para concienciar al público sobre las barreras de ser mujer en el sector tecnológico. Respaldado por la empresa del sector de los videojuegos Women in Games.'
-          }
-          showList={false}
-        />
+        <div className='space-y-10'>
+          {Tables.map(table => {
+            return (
+              <Table
+                key={table.title}
+                title={table.title}
+                skill1={table.skill1}
+                skill2={table.skill2}
+                skill3={table.skill3}
+                skill4={table.skill4}
+                skill5={table.skill5}
+              />
+            )
+          })}
+        </div>
       </div>
     </div>
   )
