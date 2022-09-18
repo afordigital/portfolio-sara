@@ -62,15 +62,6 @@ export const complexProjects = [
     hrefbutton: 'https://posicionamiento-web.vercel.app/'
   },
   {
-    icon: <FaChartBar />,
-    title: 'Graphics',
-    src: '/proyecto5.JPG',
-    description:
-      'Página estática con un ejercicio sencillo de gráficos para aprender el uso de la librería ChartJS y practicar la gestión de JSONS con archivos locales. Diseño original hecho en Figma.',
-    softwares: 'React | NextJS | TailwindCSS | ChartJS',
-    hrefbutton: 'https://graphics-xi.vercel.app/'
-  },
-  {
     icon: <FaCamera />,
     title: 'Alessio Muganni',
     src: '/proyecto3.JPG',
@@ -145,12 +136,24 @@ export const Tables = [
 
 export const TablesLabExp = [
   {
-    title: 'Artista Técnica',
+    title: 'Desarrolladora Frontend',
+    place: 'Fiuter, Madrid',
+    iconPlace: <FaRegBuilding />,
+    date: 'Sept 2022 - Actual',
+    iconDate: <FaCalendarAlt />,
+    description: 'Retos enfrentados en esta start-up:',
+    labor1:
+      'Desarrollo de un SaaS que automatiza la creación de modelos de priorización de leads en base a un histórico de datos. Creación de la plataforma con React, Tailwindcss y AWS.',
+    labor2: 'Organización a través de metodologías ágiles como Scram.',
+    showList: true
+  },
+  {
+    title: 'Artista Técnica y Desarrolladora Frontend',
     place: 'Estudio Cactus, Castellón',
     iconPlace: <FaRegBuilding />,
-    date: 'Sept 2021 - Actual',
+    date: 'Sept 2021 - Sept 2022',
     iconDate: <FaCalendarAlt />,
-    description: 'Retos enfrentados en esta start-up tecnológica:',
+    description: 'Retos enfrentados en esta consultoría tecnológica:',
     labor1:
       'Desarrollo de aplicaciones 3D con softwares actuales como Verge3D, JavaScript, HTML y CSS.',
     labor2: 'Creación de Landing Pages con React, NextJS y Tailwindcss.',

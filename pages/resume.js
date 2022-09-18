@@ -16,7 +16,7 @@ import { Tables, TablesLabExp } from '../config/projects'
 const Resume = () => {
   return (
     <div id='resume' className='max-w-5xl mx-auto'>
-      <div className='flex pb-4 text-2xl md:text-4xl font-bold px-8 md:p-0 pt-8 md:pt-0'>
+      <div className='flex pb-4 text-2xl md:text-4xl font-bold px-8 md:p-0 pt-8 md:pt-0 place-items-center'>
         <FaUser />
         <h2 className='pl-2 md:pl-4'>Resume</h2>
       </div>
@@ -76,7 +76,7 @@ const Resume = () => {
       </div>
 
       <div className='my-10'>
-        <div className='flex pb-8 text-2xl md:text-4xl font-bold px-8 md:px-0'>
+        <div className='flex pb-8 text-2xl md:text-4xl font-bold px-8 md:px-0 place-items-center'>
           <FaSuitcase />
           <h2 className='pl-2 md:pl-4'>Experiencia Laboral</h2>
         </div>
@@ -102,7 +102,7 @@ const Resume = () => {
       </div>
 
       <div className='my-10'>
-        <div className='flex pb-8 text-2xl md:text-4xl font-bold px-8 md:px-0'>
+        <div className='flex pb-8 text-2xl md:text-4xl font-bold px-8 md:px-0 place-items-center'>
           <FaTrophy />
           <h2 className='pl-2 md:pl-4'>Logros</h2>
         </div>
@@ -118,7 +118,7 @@ const Resume = () => {
       </div>
 
       <div className='my-10'>
-        <div className='flex pb-8 text-2xl md:text-4xl font-bold px-8 md:px-0'>
+        <div className='flex pb-8 text-2xl md:text-4xl font-bold px-8 md:px-0 place-items-center'>
           <FaUniversity />
           <h2 className='pl-2 md:pl-4'>Educación</h2>
         </div>
@@ -136,7 +136,7 @@ const Resume = () => {
       </div>
 
       <div className='my-10'>
-        <div className='flex pb-8 text-2xl px-8 md:px-0 md:text-4xl font-bold'>
+        <div className='flex pb-8 text-2xl px-8 md:px-0 md:text-4xl font-bold place-items-center'>
           <FaCode />
           <h2 className='pl-2 md:pl-4'>Habilidades</h2>
         </div>

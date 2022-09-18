@@ -30,13 +30,13 @@ const ExpTable = ({
           )}
         </div>
         <div className='px-6 py-4 text-lg'>
-          <div className='flex'>
+          <div className='flex place-items-center'>
             {iconPlace}
             <p className='font-semibold pl-2'>{place}</p>
           </div>
-          <div className='flex'>
+          <div className='flex place-items-center'>
             {iconDate}
-            <p className='pl-2 pb-2'>{date}</p>
+            <p className='pl-2'>{date}</p>
           </div>
           <p>{description}</p>
           {showList && (

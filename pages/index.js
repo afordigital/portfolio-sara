@@ -39,7 +39,7 @@ const Home = () => {
           no dudes en contactarme!
         </p>
       </div>
-      <div className='flex pb-12 text-2xl md:text-4xl font-bold'>
+      <div className='flex pb-12 text-2xl md:text-4xl font-bold place-items-center'>
         <GoProject />
         <h2 className='pl-4'>Proyectos principales</h2>
       </div>
@@ -54,7 +54,7 @@ const Home = () => {
           )
         })}
       </div>
-      <div className='flex pt-12 pb-8 text-2xl md:text-4xl font-bold'>
+      <div className='flex pt-12 pb-8 text-2xl md:text-4xl font-bold place-items-center'>
         <FaImages />
         <h2 className='pl-4'>Otros proyectos</h2>
       </div>
