@@ -4,13 +4,18 @@ import {
   FaShip,
   FaRegBuilding,
   FaCalendarAlt,
-  FaChartBar,
+  FaNetworkWired,
   FaChalkboard
 } from 'react-icons/fa'
-
 import Skill from '../components/common/skill'
+import { useTranslation } from 'react-i18next'
 
 export const projects = [
+  {
+    title: 'Priorización de Leads',
+    description:
+      'SaaS que recoge el histórico del usuario y gracias a modelos predictivos le permite mejorar la conversión de clientes potenciales.'
+  },
   {
     title: 'Calculadora Solar',
     description:
@@ -25,11 +30,6 @@ export const projects = [
     title: 'Alessio Muganni',
     description:
       'Portfolio de músico reconocido realizado con React, NextJS y Tailwindcss, diseño original con Figma.'
-  },
-  {
-    title: 'Puerto de los Ángeles',
-    description:
-      'Interfaz básica de una aplicación 3D para la seguridad portuaria. Realizado con JavaScript, Verge3D, HTML y CSS.'
   }
 ]
 
@@ -43,6 +43,15 @@ export const renders = [
 ]
 
 export const complexProjects = [
+  {
+    icon: <FaNetworkWired />,
+    title: 'Previsión de Leads',
+    src: '/proyecto6.JPG',
+    description:
+      'Desarrollo de un SaaS basado en Inteligencia Artificial que a través de modelos predictivos usa el histórico de datos del usuario y permite mejorar la conversión de leads.',
+    softwares: 'React | Tailwindcss | AWS',
+    hrefbutton: 'https://fiuter-app.com/'
+  },
   {
     icon: <FaCalculator />,
     title: 'Calculadora Solar',
@@ -144,7 +153,10 @@ export const TablesLabExp = [
     description: 'Retos enfrentados en esta start-up:',
     labor1:
       'Desarrollo de un SaaS que automatiza la creación de modelos de priorización de leads en base a un histórico de datos. Creación de la plataforma con React, Tailwindcss y AWS.',
-    labor2: 'Organización a través de metodologías ágiles como Scram.',
+    labor2:
+      'Desarrollo de una plataforma en React integrada en Shopify que permite a los dueños de e-commerces generar segmentación inteligente para sus campañas de marketing.',
+    labor3:
+      'Organización del equipo técnico a través de la metodología ágil Scram.',
     showList: true
   },
   {

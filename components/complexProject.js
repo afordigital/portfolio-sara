@@ -13,7 +13,7 @@ const ComplexProject = ({
   return (
     <div>
       <div className='hidden md:block'>
-        <div className='flex text-4xl font-bold place-items-center'>
+        <div className='flex text-3xl font-bold place-items-center'>
           {icon}
           <h2 className='pl-4'>{title}</h2>
         </div>

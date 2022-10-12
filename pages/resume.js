@@ -16,14 +16,14 @@ import { Tables, TablesLabExp } from '../config/projects'
 const Resume = () => {
   return (
     <div id='resume' className='max-w-5xl mx-auto'>
-      <div className='flex pb-4 text-2xl md:text-4xl font-bold px-8 md:p-0 pt-8 md:pt-0 place-items-center'>
+      <div className='flex pb-4 text-2xl md:text-3xl font-bold px-8 md:p-0 pt-8 md:pt-0 place-items-center'>
         <FaUser />
         <h2 className='pl-2 md:pl-4'>Resume</h2>
       </div>
       {/* PC */}
       <div className='hidden md:flex items-center pb-10'>
         <div className='flex flex-col'>
-          <p className='flex items-center pr-8 pb-4 text-xl'>
+          <p className='flex items-center pr-8 pb-4 text-lg'>
             Me considero una persona con mucha pasión por lo que hace. Mi
             objetivo en mi carrera profesional es seguir formándome hasta llegar
             al punto de formar mi propia comunidad, hacer divulgación
@@ -33,7 +33,7 @@ const Resume = () => {
           <a
             href={'/CV_Sara.pdf'}
             download
-            className='w-40 text-xl py-1.5 px-3 border-2 border-black dark:border-gray-200 rounded-lg font-medium hover:bg-black hover:text-white hover:ease-in transition duration-300'
+            className='w-40 text-xl flex justify-center items-center py-1 border-2 border-black dark:border-gray-200 rounded-lg font-medium hover:bg-black hover:text-white hover:ease-in transition duration-300'
           >
             Descargar CV
           </a>
@@ -76,7 +76,7 @@ const Resume = () => {
       </div>
 
       <div className='my-10'>
-        <div className='flex pb-8 text-2xl md:text-4xl font-bold px-8 md:px-0 place-items-center'>
+        <div className='flex pb-8 text-2xl md:text-3xl font-bold px-8 md:px-0 place-items-center'>
           <FaSuitcase />
           <h2 className='pl-2 md:pl-4'>Experiencia Laboral</h2>
         </div>
@@ -102,7 +102,7 @@ const Resume = () => {
       </div>
 
       <div className='my-10'>
-        <div className='flex pb-8 text-2xl md:text-4xl font-bold px-8 md:px-0 place-items-center'>
+        <div className='flex pb-8 text-2xl md:text-3xl font-bold px-8 md:px-0 place-items-center'>
           <FaTrophy />
           <h2 className='pl-2 md:pl-4'>Logros</h2>
         </div>
@@ -118,7 +118,7 @@ const Resume = () => {
       </div>
 
       <div className='my-10'>
-        <div className='flex pb-8 text-2xl md:text-4xl font-bold px-8 md:px-0 place-items-center'>
+        <div className='flex pb-8 text-2xl md:text-3xl font-bold px-8 md:px-0 place-items-center'>
           <FaUniversity />
           <h2 className='pl-2 md:pl-4'>Educación</h2>
         </div>
@@ -136,7 +136,7 @@ const Resume = () => {
       </div>
 
       <div className='my-10'>
-        <div className='flex pb-8 text-2xl px-8 md:px-0 md:text-4xl font-bold place-items-center'>
+        <div className='flex pb-8 text-2xl px-8 md:px-0 md:text-3xl font-bold place-items-center'>
           <FaCode />
           <h2 className='pl-2 md:pl-4'>Habilidades</h2>
         </div>
