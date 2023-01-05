@@ -6,7 +6,7 @@ import { FaLessThan, FaGreaterThan } from 'react-icons/fa'
 const Gallery = ({ selectedImage, setSelectedImage }) => {
   return (
     <div className='w-screen h-screen fixed top-0 left-0 bg-black bg-opacity-50 flex justify-center items-center text-2xl z-50'>
-      <div className='w-1/2 h-3/4 relative'>
+      <div className='w-1/2 h-3/4'>
         <Image
           id='image-container'
           src={renders[selectedImage]}

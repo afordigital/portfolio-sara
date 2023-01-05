@@ -8,11 +8,11 @@ const Layout = ({ children }) => {
       <Head>
         <title>Sara Montagud - Portfolio</title>
       </Head>
-      <body className='dark:bg-[#1a202c] dark:text-gray-200'>
+      <div className='dark:bg-[#1a202c] dark:text-gray-200'>
         <Nav />
         {children}
         <Footer />
-      </body>
+      </div>
     </>
   )
 }
