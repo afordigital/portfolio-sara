@@ -63,32 +63,32 @@ const Nav = () => {
             {theme === 'light' ? <FaMoon /> : <FaSun />}
           </div>
         </div>
-        <div className='flex mx-2 bg-slate-50 dark:bg-slate-700 rounded-md'>
-          <a
-            onClick={() => {
-              changeLanguage('ES')
-            }}
-            className={
-              language == 'ES'
-                ? 'px-2 py-1 rounded-md cursor-pointer ease-linear duration-300 bg-gray-100 dark:bg-[#2c313d]'
-                : 'px-2 py-1 rounded-md cursor-pointer'
-            }
-          >
-            ES
-          </a>
-          <a
-            onClick={() => {
-              changeLanguage('EN')
-            }}
-            className={
-              language == 'EN'
-                ? 'px-2 py-1 rounded-md cursor-pointer ease-linear duration-300 bg-gray-100 dark:bg-[#2c313d]'
-                : 'px-2 py-1 rounded-md cursor-pointer'
-            }
-          >
-            EN
-          </a>
-        </div>
+        {/* <div className='flex mx-2 bg-slate-50 dark:bg-slate-700 rounded-md'> */}
+        <a
+          onClick={() => {
+            changeLanguage('ES')
+          }}
+          className={
+            language == 'ES'
+              ? 'px-2 py-1 rounded-md cursor-pointer ease-linear duration-300 bg-gray-100 dark:bg-[#2c313d]'
+              : 'px-2 py-1 rounded-md cursor-pointer'
+          }
+        >
+          ES
+        </a>
+        <a
+          onClick={() => {
+            changeLanguage('EN')
+          }}
+          className={
+            language == 'EN'
+              ? 'px-2 py-1 rounded-md cursor-pointer ease-linear duration-300 bg-gray-100 dark:bg-[#2c313d]'
+              : 'px-2 py-1 rounded-md cursor-pointer'
+          }
+        >
+          EN
+        </a>
+        {/* </div> */}
       </div>
     </div>
   )
