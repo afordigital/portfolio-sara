@@ -1,7 +1,14 @@
-import { FaShip, FaRegBuilding, FaCalendarAlt } from 'react-icons/fa'
 import Skill from '../components/common/skill'
 import { useTranslation } from 'react-i18next'
-import { GraphUp, Calculator, Computer, Camera, Fishing } from 'iconoir-react'
+import {
+  GraphUp,
+  Calculator,
+  Computer,
+  Camera,
+  Fishing,
+  City,
+  Calendar
+} from 'iconoir-react'
 
 export const projects = [
   {
@@ -140,9 +147,9 @@ export const TablesLabExp = [
   {
     title: 'Desarrolladora Frontend',
     place: 'Fiuter, Madrid',
-    iconPlace: <FaRegBuilding />,
+    iconPlace: <City />,
     date: 'Sept 2022 - Actual',
-    iconDate: <FaCalendarAlt />,
+    iconDate: <Calendar width={20} strokeWidth='2' className='mt-1' />,
     description: 'Retos enfrentados en esta start-up:',
     labor1:
       'Desarrollo de un SaaS que automatiza la creación de modelos de priorización de leads en base a un histórico de datos. Creación de la plataforma con React, Tailwindcss y AWS.',
@@ -155,9 +162,9 @@ export const TablesLabExp = [
   {
     title: 'Artista Técnica y Desarrolladora Frontend',
     place: 'Estudio Cactus, Castellón',
-    iconPlace: <FaRegBuilding />,
+    iconPlace: <City width={22} strokeWidth='1.6' />,
     date: 'Sept 2021 - Sept 2022',
-    iconDate: <FaCalendarAlt />,
+    iconDate: <Calendar width={20} strokeWidth='2' className='mt-1' />,
     description: 'Retos enfrentados en esta consultoría tecnológica:',
     labor1:
       'Desarrollo de aplicaciones 3D con softwares actuales como Verge3D, JavaScript, HTML y CSS.',
@@ -169,9 +176,9 @@ export const TablesLabExp = [
   {
     title: 'Programadora Web',
     place: 'Mandarina Webs, Valencia',
-    iconPlace: <FaRegBuilding />,
+    iconPlace: <City width={22} strokeWidth='1.6' />,
     date: 'Autónoma',
-    iconDate: <FaCalendarAlt />,
+    iconDate: <Calendar width={20} strokeWidth='2' className='mt-1' />,
     description: 'Retos enfrentados en esta empresa de marketing digital:',
     labor1:
       'Desarrollo de un plugin para Wordpress consistente en una calculadora solar.',
@@ -182,9 +189,9 @@ export const TablesLabExp = [
   {
     title: 'Artista en CGI',
     place: 'Nuxot, Catellón',
-    iconPlace: <FaRegBuilding />,
+    iconPlace: <City width={22} strokeWidth='1.6' />,
     date: 'Enero 2021 - Junio 2021',
-    iconDate: <FaCalendarAlt />,
+    iconDate: <Calendar />,
     description: 'Retos enfrentados en esta empresa: ',
     labor1:
       'Realización de imágenes CGI para arquitectura en 3ds Max y V-Ray 5.',

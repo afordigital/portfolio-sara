@@ -1,16 +1,10 @@
 import {
-  FaSuitcase,
-  FaUniversity,
-  FaRegBuilding,
-  FaCalendarAlt,
-  FaUser,
-  FaTrophy
-} from 'react-icons/fa'
-import {
   ProfileCircle,
   LargeSuitcase,
   Trophy,
-  GraduationCap
+  GraduationCap,
+  Calendar,
+  City
 } from 'iconoir-react'
 
 import ExpTable from '../components/ExpTable'
@@ -107,10 +101,11 @@ const Resume = () => {
           <Trophy width={28} strokeWidth={2.1} className='mt-2' />
           <h2 className='pl-2 md:pl-4'>Logros</h2>
         </div>
+
         <ExpTable
           title={'Ponencia en Hola Mundo Day'}
-          date={'8 de mayo 2023'}
-          iconDate={<FaCalendarAlt />}
+          date={'Mayo 2023'}
+          iconDate={<Calendar width={20} strokeWidth='2' className='mt-1' />}
           description={
             'Gracias a la inciativa del creador de contenido MoureDev tuve la oportunidad de dar una charla "Abrazando al fracaso" con el fin de ayudar a la gente a cambiar su percepción del fracaso y acogerlo como un motor para mejorar.'
           }
@@ -119,10 +114,20 @@ const Resume = () => {
         <br />
         <ExpTable
           title={'Entrevista para Garaje de Ideas'}
-          date={'28 de abril 2023'}
-          iconDate={<FaCalendarAlt />}
+          date={'Abril 2023'}
+          iconDate={<Calendar width={20} strokeWidth='2' className='mt-1' />}
           description={
-            'Tuve el placer de dar tres entrevistas gracias a una iniciativa de Garaje de Ideas para concienciar sobre la importancia de las soft skills en el mundo tecnológico.'
+            'Entrevista sobre mi experiencia con el síndrome de la impostora, la creación de una comunidad de programación y la simbiosis entre junior y senior para ayudar a mejorar las soft skills de la comunidad.'
+          }
+          showList={false}
+        />
+        <br />
+        <ExpTable
+          title={'Hackaton en comunidad'}
+          date={'Febrero de 2023'}
+          iconDate={<Calendar width={20} strokeWidth='2' className='mt-1' />}
+          description={
+            'Organización de un evento en mi canal de twitch donde participaron 17 equipos de la comunidad de programación para desarrollar una aplicación web. Contamos como jurado con el apoyo de una ingeniera informática Luisina de Paula especializada en backend.'
           }
           showList={false}
         />
@@ -130,7 +135,7 @@ const Resume = () => {
         <ExpTable
           title={'Charla en'}
           date={'Abril 2020'}
-          iconDate={<FaCalendarAlt />}
+          iconDate={<Calendar width={20} strokeWidth='2' className='mt-1' />}
           description={
             'Charla en la plataforma de streaming Twitch para concienciar al público sobre las barreras de ser mujer en el sector tecnológico. Respaldado por la empresa del sector de los videojuegos Women in Games.'
           }
@@ -146,9 +151,9 @@ const Resume = () => {
         <ExpTable
           title={'Diseño y Desarrollo de Videojuegos'}
           place={'Universitat Jaume I, Castellón'}
-          iconPlace={<FaRegBuilding />}
+          iconPlace={<City width={22} strokeWidth='1.6' />}
           date={'Septiembre 2016 - Enero 2022'}
-          iconDate={<FaCalendarAlt />}
+          iconDate={<Calendar width={20} strokeWidth='2' className='mt-1' />}
           description={
             'Elegí esta universidad motivada por su amplia enseñanza en programación, matemáticas, algorítmica y bases de datos, entre otros. Ahí pude desarrollar mi interés por combinarlo con disciplinas artísticas para crear experiencias para los jugadores.'
           }
