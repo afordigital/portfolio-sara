@@ -1,7 +1,5 @@
 import Button from '../components/common/button'
 
-import Image from 'next/image'
-
 const ComplexProject = ({
   icon,
   title,
@@ -17,21 +15,22 @@ const ComplexProject = ({
           {icon}
           <h2 className='pl-4'>{title}</h2>
         </div>
-        <div className='flex items-center gap-x-8 text-lg'>
+        <div className='flex items-center text-lg gap-x-8'>
           <a className='w-1/3 cursor-pointer' href={hrefbutton}>
-            <Image
+            <img
               src={src}
               alt='Proyecto 1'
               width={320}
               height={270}
               objectFit='contain'
+              className='py-8'
             />
           </a>
 
           <div className='w-2/3'>
             <p>{description}</p>
             <br />
-            <div className='flex items-center space-x-12 w-full'>
+            <div className='flex items-center w-full space-x-12'>
               <div className='w-full'>
                 <h3 className='font-semibold'>Tecnologías usadas:</h3>
                 <div className='flex space-x-12'>
@@ -46,13 +45,13 @@ const ComplexProject = ({
         </div>
       </div>
       {/* Mobile */}
-      <div className='md:hidden p-8 pb-0'>
+      <div className='p-8 pb-0 md:hidden'>
         <div className='flex text-2xl font-bold'>
           {icon}
           <h2 className='pl-4'>{title}</h2>
         </div>
         <a className='cursor-pointer' href={hrefbutton}>
-          <Image
+          <img
             src={src}
             alt='Proyecto 1'
             width={320}
@@ -60,11 +59,11 @@ const ComplexProject = ({
             objectFit='contain'
           />
         </a>
-        <div className='flex items-center gap-x-8 text-lg'>
+        <div className='flex items-center text-lg gap-x-8'>
           <div>
             <p>{description}</p>
             <br />
-            <div className='flex items-center space-x-12 w-full'>
+            <div className='flex items-center w-full space-x-12'>
               <div className='w-full'>
                 <h3 className='font-semibold'>Tecnologías usadas:</h3>
                 <div className='flex space-x-12'>

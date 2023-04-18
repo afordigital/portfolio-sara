@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 const ExpTable = ({
   title,
   place,
@@ -13,13 +11,13 @@ const ExpTable = ({
   showList
 }) => {
   return (
-    <div className='border drop-shadow-sm rounded-lg'>
+    <div className='border rounded-lg drop-shadow-sm'>
       <div className='divide-y-2'>
         <div className='flex items-center px-6 py-4 text-xl'>
           <p className='font-bold'>{title}</p>
           {title == 'Charla en' && (
             <div className='pl-4'>
-              <Image
+              <img
                 src='/women-in-games.svg'
                 alt='svg image'
                 width={100}
@@ -32,7 +30,7 @@ const ExpTable = ({
         <div className='px-6 py-4 text-lg'>
           <div className='flex place-items-center'>
             {iconPlace}
-            <p className='font-semibold pl-2'>{place}</p>
+            <p className='pl-2 font-semibold'>{place}</p>
           </div>
           <div className='flex place-items-center'>
             {iconDate}

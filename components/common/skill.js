@@ -1,11 +1,9 @@
-import Image from 'next/image'
-
 const Skill = ({ image, description }) => {
   return (
     <div>
       <div className='flex flex-col space-y-2'>
         <div className='flex justify-center'>
-          <Image
+          <img
             src={image}
             alt='skill icon'
             width={60}

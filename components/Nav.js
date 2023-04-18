@@ -25,7 +25,7 @@ const Nav = () => {
   return (
     <div id='nav' className='w-full pt-10 md:pb-10'>
       <a
-        className='md:hidden px-8 font-semibold flex items-center justify-start cursor-pointer'
+        className='flex items-center justify-start px-8 font-semibold cursor-pointer md:hidden'
         onClick={() => {
           if (!openMenu) {
             setOpenMenu(true)
@@ -37,8 +37,8 @@ const Nav = () => {
         <FaBars size={26} />
         {openMenu && <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />}
       </a>
-      <div className='hidden md:flex justify-center items-center p-8 h-14 font-semibold'>
-        <div className='flex justify-center items-center gap-x-8'>
+      <div className='items-center justify-center hidden p-8 font-semibold md:flex h-14'>
+        <div className='flex items-center justify-center gap-x-8'>
           {links.map(link => {
             return (
               <Link key={link.name} href={link.href} title='main'>
@@ -55,7 +55,7 @@ const Nav = () => {
             )
           })}
         </div>
-        <div className='pl-10 py-2 px-2'>
+        <div className='px-2 py-2 pl-10'>
           <div
             className='p-2 rounded-md cursor-pointer ease-linear duration-300 bg-gray-100 dark:bg-[#2c313d]'
             onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
@@ -63,7 +63,7 @@ const Nav = () => {
             {theme === 'light' ? <FaMoon /> : <FaSun />}
           </div>
         </div>
-        {/* <div className='flex mx-2 bg-slate-50 dark:bg-slate-700 rounded-md'> */}
+        {/*         
         <a
           onClick={() => {
             changeLanguage('ES')
@@ -87,8 +87,7 @@ const Nav = () => {
           }
         >
           EN
-        </a>
-        {/* </div> */}
+        </a> */}
       </div>
     </div>
   )

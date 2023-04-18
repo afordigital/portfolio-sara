@@ -1,14 +1,7 @@
-import {
-  FaCalculator,
-  FaCamera,
-  FaShip,
-  FaRegBuilding,
-  FaCalendarAlt,
-  FaNetworkWired,
-  FaChalkboard
-} from 'react-icons/fa'
+import { FaShip, FaRegBuilding, FaCalendarAlt } from 'react-icons/fa'
 import Skill from '../components/common/skill'
 import { useTranslation } from 'react-i18next'
+import { GraphUp, Calculator, Computer, Camera, Fishing } from 'iconoir-react'
 
 export const projects = [
   {
@@ -44,7 +37,7 @@ export const renders = [
 
 export const complexProjects = [
   {
-    icon: <FaNetworkWired />,
+    icon: <GraphUp width={30} strokeWidth={2.3} />,
     title: 'Previsión de Leads',
     src: '/proyecto6.JPG',
     description:
@@ -53,7 +46,7 @@ export const complexProjects = [
     hrefbutton: 'https://fiuter-app.com/'
   },
   {
-    icon: <FaCalculator />,
+    icon: <Calculator width={26} strokeWidth={2.3} className='mt-2' />,
     title: 'Calculadora Solar',
     src: '/proyecto1.JPG',
     description:
@@ -62,7 +55,7 @@ export const complexProjects = [
     hrefbutton: 'https://sima.mandarinaservices.com/calculadora/%27%7D'
   },
   {
-    icon: <FaChalkboard />,
+    icon: <Computer width={28} strokeWidth={2.3} className='mt-2' />,
     title: 'Posicionamiento Web',
     src: '/proyecto2.JPG',
     description:
@@ -71,7 +64,7 @@ export const complexProjects = [
     hrefbutton: 'https://posicionamiento-web.vercel.app/'
   },
   {
-    icon: <FaCamera />,
+    icon: <Camera width={28} strokeWidth={2.3} className='mt-2' />,
     title: 'Alessio Muganni',
     src: '/proyecto3.JPG',
     description:
@@ -80,7 +73,7 @@ export const complexProjects = [
     hrefbutton: 'https://prueba-navy.vercel.app/'
   },
   {
-    icon: <FaShip />,
+    icon: <Fishing width={28} strokeWidth={2.3} className='mt-2' />,
     title: 'Puerto de Los Ángeles',
     src: '/proyecto4.JPG',
     description:

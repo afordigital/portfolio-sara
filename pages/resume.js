@@ -1,6 +1,4 @@
-import Image from 'next/image'
 import {
-  FaCode,
   FaSuitcase,
   FaUniversity,
   FaRegBuilding,
@@ -8,22 +6,27 @@ import {
   FaUser,
   FaTrophy
 } from 'react-icons/fa'
+import {
+  ProfileCircle,
+  LargeSuitcase,
+  Trophy,
+  GraduationCap
+} from 'iconoir-react'
 
 import ExpTable from '../components/ExpTable'
-import Table from '../components/Table'
-import { Tables, TablesLabExp } from '../config/projects'
+import { TablesLabExp } from '../config/projects'
 
 const Resume = () => {
   return (
     <div id='resume' className='max-w-5xl mx-auto'>
-      <div className='flex pb-4 text-2xl md:text-3xl font-bold px-8 md:p-0 pt-8 md:pt-0 place-items-center'>
-        <FaUser />
+      <div className='flex px-8 pt-8 pb-4 text-2xl font-bold md:text-3xl md:p-0 md:pt-0 place-items-center'>
+        <ProfileCircle width={28} strokeWidth={2.3} className='mt-1' />
         <h2 className='pl-2 md:pl-4'>Resume</h2>
       </div>
       {/* PC */}
-      <div className='hidden md:flex items-center pb-10'>
+      <div className='items-center hidden pb-10 md:flex'>
         <div className='flex flex-col'>
-          <p className='flex items-center pr-8 pb-4 text-lg'>
+          <p className='flex items-center pb-4 pr-8 text-lg'>
             Me considero una persona con mucha pasión por lo que hace. Mi
             objetivo en mi carrera profesional es seguir formándome hasta llegar
             al punto de formar mi propia comunidad, hacer divulgación
@@ -33,24 +36,22 @@ const Resume = () => {
           <a
             href={'/CV_Sara.pdf'}
             download
-            className='w-40 text-xl flex justify-center items-center py-1 border-2 border-black dark:border-gray-200 rounded-lg font-medium hover:bg-black hover:text-white hover:ease-in transition duration-300'
+            className='flex items-center justify-center w-40 py-1 text-xl font-medium transition duration-300 border-2 border-black rounded-lg dark:border-gray-200 hover:bg-black hover:text-white hover:ease-in'
           >
             Descargar CV
           </a>
         </div>
-        <Image
+        <img
           src='/img-portfolio.jpg'
           alt='Picture of the author'
-          width={600}
-          height={600}
-          objectFit='cover'
+          style={{ width: '700px', height: '230px', objectFit: 'cover' }}
           className='rounded-full'
         />
       </div>
       {/* Mobile */}
-      <div className='flex md:hidden items-center p-8'>
+      <div className='flex items-center p-8 md:hidden'>
         <div className='flex flex-col'>
-          <Image
+          <img
             src='/img-portfolio.jpg'
             alt='Picture of the author'
             width={300}
@@ -76,8 +77,8 @@ const Resume = () => {
       </div>
 
       <div className='my-10'>
-        <div className='flex pb-8 text-2xl md:text-3xl font-bold px-8 md:px-0 place-items-center'>
-          <FaSuitcase />
+        <div className='flex px-8 pb-8 text-2xl font-bold md:text-3xl md:px-0 place-items-center'>
+          <LargeSuitcase width={26} strokeWidth={2.3} className='mt-2' />
           <h2 className='pl-2 md:pl-4'>Experiencia Laboral</h2>
         </div>
         <div className='space-y-10'>
@@ -102,10 +103,30 @@ const Resume = () => {
       </div>
 
       <div className='my-10'>
-        <div className='flex pb-8 text-2xl md:text-3xl font-bold px-8 md:px-0 place-items-center'>
-          <FaTrophy />
+        <div className='flex px-8 pb-8 text-2xl font-bold md:text-3xl md:px-0 place-items-center'>
+          <Trophy width={28} strokeWidth={2.1} className='mt-2' />
           <h2 className='pl-2 md:pl-4'>Logros</h2>
         </div>
+        <ExpTable
+          title={'Ponencia en Hola Mundo Day'}
+          date={'8 de mayo 2023'}
+          iconDate={<FaCalendarAlt />}
+          description={
+            'Gracias a la inciativa del creador de contenido MoureDev tuve la oportunidad de dar una charla "Abrazando al fracaso" con el fin de ayudar a la gente a cambiar su percepción del fracaso y acogerlo como un motor para mejorar.'
+          }
+          showList={false}
+        />
+        <br />
+        <ExpTable
+          title={'Entrevista para Garaje de Ideas'}
+          date={'28 de abril 2023'}
+          iconDate={<FaCalendarAlt />}
+          description={
+            'Tuve el placer de dar tres entrevistas gracias a una iniciativa de Garaje de Ideas para concienciar sobre la importancia de las soft skills en el mundo tecnológico.'
+          }
+          showList={false}
+        />
+        <br />
         <ExpTable
           title={'Charla en'}
           date={'Abril 2020'}
@@ -118,8 +139,8 @@ const Resume = () => {
       </div>
 
       <div className='my-10'>
-        <div className='flex pb-8 text-2xl md:text-3xl font-bold px-8 md:px-0 place-items-center'>
-          <FaUniversity />
+        <div className='flex px-8 pb-8 text-2xl font-bold md:text-3xl md:px-0 place-items-center'>
+          <GraduationCap width={28} strokeWidth={2.1} className='mt-2' />
           <h2 className='pl-2 md:pl-4'>Educación</h2>
         </div>
         <ExpTable
@@ -133,28 +154,6 @@ const Resume = () => {
           }
           showList={false}
         />
-      </div>
-
-      <div className='my-10'>
-        <div className='flex pb-8 text-2xl px-8 md:px-0 md:text-3xl font-bold place-items-center'>
-          <FaCode />
-          <h2 className='pl-2 md:pl-4'>Habilidades</h2>
-        </div>
-        <div className='space-y-10'>
-          {Tables.map(table => {
-            return (
-              <Table
-                key={table.title}
-                title={table.title}
-                skill1={table.skill1}
-                skill2={table.skill2}
-                skill3={table.skill3}
-                skill4={table.skill4}
-                skill5={table.skill5}
-              />
-            )
-          })}
-        </div>
       </div>
     </div>
   )
