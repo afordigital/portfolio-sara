@@ -15,7 +15,7 @@ const Nav = () => {
   const [t, i18n] = useTranslation('global')
   const [language, setLanguage] = useState('ES')
 
-  const { theme, setTheme } = useTheme()
+  const { resolvedTheme, setTheme } = useTheme()
 
   function changeLanguage (language) {
     setLanguage(language)
@@ -58,9 +58,9 @@ const Nav = () => {
         <div className='px-2 py-2 pl-10'>
           <div
             className='p-2 rounded-md cursor-pointer ease-linear duration-300 bg-gray-100 dark:bg-[#2c313d]'
-            onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+            onClick={() => setTheme(resolvedTheme === 'light' ? 'dark' : 'light')}
           >
-            {theme === 'light' ? <FaMoon /> : <FaSun />}
+            {resolvedTheme === 'light' ? <FaMoon /> : <FaSun />}
           </div>
         </div>
         {/*         
