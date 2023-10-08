@@ -156,7 +156,7 @@ export const TablesLabExp = [
     labor2:
       'Desarrollo de una plataforma en React integrada en Shopify que permite a los dueños de e-commerces generar segmentación inteligente para sus campañas de marketing.',
     labor3:
-      'Organización del equipo técnico a través de la metodología ágil Scram.',
+      'Organización del equipo técnico a través de la metodología ágil Scrum.',
     showList: true
   },
   {
